@@ -37,7 +37,7 @@ HTML, CSS, JavaScript - For building the user interface and interacting with the
 
 1. Clone the repository:
 
-      git clone <<your-repository-url>>
+      git clone '<your-repository-url>' 
    
 2. Install Dependencies
 
