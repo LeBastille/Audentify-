@@ -33,5 +33,17 @@ FRONTEND:
 
 HTML, CSS, JavaScript - For building the user interface and interacting with the backend.
 
+## Installation
 
+1. Clone the repository:
+   
+   git clone <your-repository-url>
+   
+2. Install Dependencies
 
+  pip install -r requirements.txt 
+
+3. Run the Flask Server:
+
+Open a terminal and navigate to your project directory. Then, run the following command:
+    flask run
