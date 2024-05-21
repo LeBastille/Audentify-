@@ -8,6 +8,7 @@ FEATURES:
 - Recommendations: Song recommendations are provided based on whichever genre has been predicted or even using the search bar by typing in the genre name
 
 Technologies Used:
+
 MACHINE LEARNING:
 . VGGish - Google's Pre Trained model for audio feature extraction
 . SVM - Support Vector Machine Classifier for genre prediction
