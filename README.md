@@ -10,18 +10,27 @@ FEATURES:
 Technologies Used:
 
 MACHINE LEARNING:
+
 . VGGish - Google's Pre Trained model for audio feature extraction
+
 . SVM - Support Vector Machine Classifier for genre prediction
 
 BACKEND:
+
 .Flask: Python web framework for handling requests and building the API.
+
 .TensorFlow: For loading and running the VGGish model.
+
 .scikit-learn: For the SVM implementation and evaluation.
+
 .PyAudio: For audio recording.
+
 .Librosa: For audio manipulation and processing.
+
 .soundfile: For saving audio data as WAV files.
 
 FRONTEND:
+
 HTML, CSS, JavaScript: For building the user interface and interacting with the backend.
 
 
