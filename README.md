@@ -17,20 +17,20 @@ MACHINE LEARNING:
 
 BACKEND:
 
-- Flask: Python web framework for handling requests and building the API.
+- Flask - Python web framework for handling requests and building the API.
 
-- TensorFlow: For loading and running the VGGish model.
+- TensorFlow - For loading and running the VGGish model.
 
-- scikit-learn: For the SVM implementation and evaluation.
+- scikit-learn - For the SVM implementation and evaluation.
 
-- PyAudio: For audio recording.
+- PyAudio - For audio recording.
 
-- Librosa: For audio manipulation and processing.
+- Librosa - For audio manipulation and processing.
 
-- soundfile: For saving audio data as WAV files.
+- soundfile - For saving audio data as WAV files.
 
 FRONTEND:
 
-HTML, CSS, JavaScript: For building the user interface and interacting with the backend.
+HTML, CSS, JavaScript - For building the user interface and interacting with the backend.
 
 
