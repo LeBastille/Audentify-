@@ -1,0 +1,51 @@
+genre,song_name,artist_name,link
+Blues,"Pride and Joy", Stevie Ray Vaughan, https://youtu.be/I3MTGhRC82s?si=EtbQUvESuH6T0i_1
+Blues,"Sweet Home Chicago", Blues Brothers, https://youtu.be/euJ22UqLD5Y?si=WxrBr9wPIjZThSx-
+Blues,"I'm Your Hoochie Coochie Man", Willie Dixon, https://youtu.be/A5qBsUzvgDA?si=MjfN1ZPYNWTGMheB
+Blues,"Statesboro Blues", Blind Willie McTell, https://youtu.be/fnWxZtI3ONY?si=9Mt35rNpBLZJybAy
+Blues,"Born Under A Bad Sign", Albert King, https://youtu.be/2Py37G9qsfY?si=qBdMbuz7rAgUL5Yd
+Classical,"Clair de Lune", Debussy, https://www.youtube.com/watch?v=CvFH_6DNRCY
+Classical,"Canon in D", Pachelbel, https://www.youtube.com/watch?v=NlprozGcs80
+Classical,"Ave Maria", Schubert, https://youtu.be/2H5rusicEnc?si=yZ3R8QRlXnZI1v7K
+Classical,"Toccata and Fugue in D Minor", Bach, https://www.youtube.com/watch?v=ipzR9bhei_o
+Classical,"Boléro", Ravel, https://youtu.be/r30D3SW4OVw?si=VIwluAWtnI-Rp3or
+Country,"The Dance", Garth Brooks, https://youtu.be/6FHvP_Yv0wE?si=EiLhIZHV-ZG0_-et
+Country,"Amazed", Lonestar, https://youtu.be/cAT4rUImL6Q?si=CTP0zJ_SUPgHHkhn
+Country,"Whiskey Lullaby", Brad Paisley & Alison Krauss, https://youtu.be/PVp7yKSUq0Q?si=d3B0Gs1QEjmUg6fV
+Country,"Before He Cheats", Carrie Underwood, https://youtu.be/Ysz4UsTxIYU?si=Z7MrF9HzFdyUrGYY
+Country,"Blue Ain't Your Color", Keith Urban, https://www.youtube.com/watch?v=8AHCfZTRGiI
+Disco,Boogie Wonderland: Earth, Wind & Fire, [invalid URL removed]
+Disco,Le Freak, Chic, https://www.youtube.com/watch?v=UqyT8IEBkvY
+Disco,September: Earth, Wind & Fire, https://www.youtube.com/watch?v=Gs069dndIYk
+Disco,I Feel Love, Donna Summer, https://www.youtube.com/watch?v=N-aK6JnyFmk
+Disco,Good Times, Chic, [invalid URL removed]
+Hip Hop,Hey Ya!, Outkast, https://www.youtube.com/watch?v=PWgvGjAhvIw
+Hip Hop,Ms. Jackson, Outkast, https://www.youtube.com/watch?v=MYxAiK6VnXw
+Hip Hop,Stan, Eminem, https://www.youtube.com/watch?v=gOMhN-hfMtY
+Hip Hop,Empire State of Mind, Jay-Z ft. Alicia Keys, [invalid URL removed]
+Hip Hop,Juicy, The Notorious B.I.G., [invalid URL removed]
+Jazz,Kind of Blue, Miles Davis, [invalid URL removed]
+Jazz,Autumn Leaves, Cannonball Adderley, [invalid URL removed]
+Jazz,All Blues, Miles Davis, [invalid URL removed]
+Jazz,Watermelon Man, Herbie Hancock, [invalid URL removed]
+Jazz,A Love Supreme: Part 1 - Acknowledgement, John Coltrane, [invalid URL removed]
+Metal,Crazy Train, Ozzy Osbourne, https://www.youtube.com/watch?v=CSvFpBOe8eY
+Metal,Walk, Pantera, https://www.youtube.com/watch?v=AkFqg5wAuFk
+Metal,Raining Blood, Slayer, https://www.youtube.com/watch?v=z8ZqFlw6hYg
+Metal,Painkiller, Judas Priest, https://www.youtube.com/watch?v=nM__lPTWThU
+Metal,Fear of the Dark, Iron Maiden, [invalid URL removed]
+Pop,Rolling in the Deep, Adele, https://www.youtube.com/watch?v=rYEDA3JcQqw
+Pop,Roar, Katy Perry, https://www.youtube.com/watch?v=CevxZvSJLk8
+Pop,Uptown Girl, Billy Joel, https://www.youtube.com/watch?v=hCuMWrfXG4E
+Pop,Billie Jean, Michael Jackson, https://www.youtube.com/watch?v=Zi_XLOBDo_Y
+Pop,Bohemian Rhapsody, Queen, https://www.youtube.com/watch?v=fJ9rUzIMcZQ
+Reggae,I Can See Clearly Now, Jimmy Cliff, [invalid URL removed]
+Reggae,Red Red Wine, UB40, https://www.youtube.com/watch?v=zXt56MB-3vc
+Reggae,Could You Be Loved, Bob Marley & The Wailers, [invalid URL removed]
+Reggae,Stir It Up, Bob Marley & The Wailers, [invalid URL removed]
+Reggae,Sweat (A La La La La Long), Inner Circle, [invalid URL removed]
+Rock,Stairway to Heaven, Led Zeppelin, https://www.youtube.com/watch?v=QkF3oxziUI4
+Rock,Smells Like Teen Spirit, Nirvana, https://www.youtube.com/watch?v=hTWKbfoikeg
+Rock,Bohemian Rhapsody, Queen, https://www.youtube.com/watch?v=fJ9rUzIMcZQ
+Rock,Sweet Child o' Mine, Guns N' Roses, https://www.youtube.com/watch?v=1w7OgIMMRc4
+Rock,Back in Black, AC/DC, https://www.youtube.com/watch?v=pAgnJDJN4VA

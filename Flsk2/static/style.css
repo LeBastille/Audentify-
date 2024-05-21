@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #0575E6;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+.flash-message {
+    position: fixed;      /* Fix to the top even when scrolling */
+    top: 65px;            /* Adjust distance from the top as needed */
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 40%;        
+    padding: 15px;
+    background-color: #4CAF50; /* Example background color (green) */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100;        /* Ensure it appears above other elements */
+}
+
+
+
+.flash-message li {
+    list-style: none; /* Remove default list styling */
+    margin-bottom: 5px;
+}
+
+
+div.flash-message.error {  /* Increased specificity */
+    background-color: #f44336;
+    color: white;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle {
+    background-color: #0575E6;
+    height: 100%;
+    background: linear-gradient(to right, #5433FF, #20BDFF);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+.sign-in button {
+    margin-top: 0px;  
+}
+
+
+/*main page*/
+
+.Realtime .search {
+    height: 44px;
+    width: 584px;
+    line-height: 44px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    font: 16px 'Montserrat', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px; /* Adjust padding if needed */
+  }
+  
+  .Realtime .search:hover,
+  .Realtime .search:focus {
+    outline: none;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .Realtime.account-text.search::placeholder { /* Style the search bar's placeholder */
+    color: #ccc; /* Adjust placeholder text color */
+    font-weight: lighter; /* Adjust placeholder text weight */
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Align icon vertically */
+    padding-right: 20px; /* Adjust padding to accommodate icon */
+  }
+.flashes {
+    position: fixed;  /* Fix to the top even when scrolling */
+    top: 95px;         /* Adjust distance from the top as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 40%;        /* Adjust width as needed */
+    padding: 15px;
+    background-color: #4CAF50; /* Example background color (green) */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100;     /* Ensure it appears above other elements */
+}
+
+.flashes li {
+    list-style: none; /* Remove default list styling */
+    margin-bottom: 5px;
+}
+
+/* Navigation Styling */
+
+/*main - page */
+
+.main-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute links evenly */
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+  }
+  
+  .main-page .nav-links,
+  .main-page.account-text {
+    display: inline-block; /* Make them behave similarly */
+  }
+  
+  .main-page .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-page .nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+.main-page.nav-links a,
+.main-page.account-text {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px; /* Adjust padding if needed */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition both color and background */
+}
+
+.main-page.nav-links a:hover,
+.main-page.account-text:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Additional styling for the icon */
+.main-page.account-text i {  
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.main-page.account-text:hover i {
+  color: white;  /* Change icon color on hover */
+}
+  
+.Realtime h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; 
+  font-size: 48px; /* Adjust font size as desired */
+  text-align: center; /* Center align the text */
+  margin: 50px 0; /* Add some margin above and below */
+}
+
+.Realtime h1 span {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* Example gradient - adjust colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/*buttons realtime*/
+.realtime-button {
+  display: flex;
+  justify-content: center;  /* Horizontal centering */
+  align-items: center;      /* Vertical centering */
+  height: 100vh;            /* Make the container take up full viewport height */
+}
+
+
+.realtime-b{
+font-size: 1rem;
+padding: 0.8em 2em;
+background-color: #000;
+border: 3px solid white;
+border-radius: 1em;
+color: #fff;
+font-weight: bolder;
+transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+box-shadow: -5px 5px 0px 0px white;
+}
+
+.realtime-b:hover {
+transform: translate(5px, -5px);
+}
+
+
+/*FOR Upload*/
+
+.upload-b{
+  font-size: 1rem;
+  padding: 0.8em 2em;
+  background-color: #000;
+  border: 3px solid white;
+  border-radius: 1em;
+  color: #fff;
+  font-weight: bolder;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px white;
+  }
+  
+  .upload-b:hover {
+  transform: translate(5px, -5px);
+  }
+  
+
+  .or-text {
+    margin: 5px 5px;  /* Increased space on either side of the "or" text */
+    font-weight: bold;
+    color: white;
+  } 
+
+/* Overall Container Styling */
+#recommendations {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Keep the border for visual separation */
+  border-radius: 8px;
+    background-color: transparent; /* Light background color */
+    display: none;
+    color: white; /* Set text color to white */
+}
+
+#recommendations h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* List Item Styling */
+#recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+#recommendations li {
+  display: flex; /* Enable flexbox for list items */
+  align-items: center; /* Vertically align items (optional) */
+}
+#recommendations ul {
+  display: flex; /* Enable flexbox for the list */
+  flex-direction: column; /* Arrange items vertically (optional) */
+}
+
+
+#recommendations a {  /* Link styling is inherited from #recommendations */
+    text-decoration: none;
+}
+
+#recommendations a {
+    color: #fff; /* Or another suitable text color */
+    background-color: linear-gradient(to right, #021B79, #0575E6); /* Blue background */
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional: Rounded corners */
+    text-decoration: underline;
+}
+
+#recommendations li a {
+  margin-left: auto; /* Push the link to the right */
+}
+
+
+
+/*Account page*/
+
+.accounts .account-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  width: 80%; /* Responsive width */
+  max-width: 500px; /* Maximum width */
+  margin: 50px auto; /* Center the card */
+}
+
+.accounts h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accounts .form-group {
+  margin-bottom: 15px;
+}
+
+.accounts label {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.accounts input[type="text"],
+.accounts input[type="email"],
+.accounts input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.accounts button[type="submit"] {
+  background-color: #333; /* Black button */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Media Queries for Responsiveness (Example) */
+@media (max-width: 768px) {
+  .accounts .account-card {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/*account navigation*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute links evenly */
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.nav-links,
+.account-link {
+  display: inline-block; /* Make them behave similarly */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 px;
+}
+
+.nav-links a,
+.account-link {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px; /* Adjust padding if needed */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition both color and background */
+}
+
+.nav-links a:hover,
+.account-text:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Additional styling for the icon */
+.account-link i {  
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.account-link:hover i {
+  color: white;  /* Change icon color on hover */
+}
+
+/*History*/
+
+
+/*About us*/
+
+/* Your existing CSS */
+/* Your existing CSS */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Showcase Section */
+.showcase {
+  width: 100%;
+  min-height: 70vh;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align content vertically */
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Align text within to the left */
+  margin-top: 80px;
+}
+
+.text {
+  z-index: 10;
+}
+
+.text h2, .text h3 {
+  font-size: 3em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 991px) {
+  .showcase {
+    padding: 40px;
+    min-height: auto;
+  }
+  .text h2, .text h3 {
+    font-size: 2em;
+  }
+}
+
+
+.text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px;
+}
+
+/*History*/
+
+.history-header {
+  position: absolute;
+  top: 60px;
+  color: white;
+  justify-content: center;
+}
+
+.history-container {
+  width: calc(80% + 20px); /* Adjust the width with scrollbar width */
+  margin: 50px auto; /* Adjust the margin as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Rounded border */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+.history-list {
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.history-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+/* Webkit scrollbar customization */
+.history-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.history-container::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 15px;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  border: 3px solid #fff; /* Adjust border width and color */
+}
+.history-table {
+    width: 100%; /* Ensure the table takes full width of its container */
+    border-collapse: collapse; /* Remove default table spacing */
+    margin-top: 20px; /* Optional spacing from header */
+}
+
+.history-table th, .history-table td {
+    border: 1px solid #ddd; /* Add a subtle border to cells */
+    padding: 8px;             /* Add some padding for readability */
+    text-align: left;        /* Align text to the left by default */
+}
+
+/* Your existing button styles */
+.upload-b {
+    /* ... your styles ... */
+    display: inline-block; /* Make sure it's inline-block if that's what you want */
+}
+
+/* Override form and input styles */
+form, input[type="file"] {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+

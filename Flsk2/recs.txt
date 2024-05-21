@@ -1,0 +1,31 @@
+genre,song_name,artist_name,link
+Blues,"The Thrill Is Gone", B.B. King, https://www.youtube.com/watch?v=4fk2prKnYnI
+Blues,"Crossroads", Robert Johnson, https://www.youtube.com/watch?v=Yd60nI4sa9A
+Blues,"Mannish Boy", Muddy Waters, https://www.youtube.com/watch?v=bSfqNEvykv0
+Classical,"Symphony No. 5", Beethoven, https://www.youtube.com/watch?v=jv2WJMVPQi8
+Classical,"Moonlight Sonata", Beethoven, https://www.youtube.com/watch?v=4Tr0otuiQuU
+Classical,"The Four Seasons", Vivaldi, https://www.youtube.com/watch?v=GRxofEmo3HA
+Country,"Jolene", Dolly Parton, https://youtu.be/Ixrje2rXLMA?si=Aw8IJzKUkMJb4Xv
+Country,"The Gambler", Kenny Rogers, https://youtu.be/jGYJrjwiPC4?si=wSJOzHXnBCqM6xnf
+Country,"Ring of Fire", Johnny Cash, https://www.youtube.com/watch?v=It7107ELQvY
+Disco,September: Earth, Wind & Fire, https://www.youtube.com/watch?v=Gs069dndIYk
+Disco,I Feel Love, Donna Summer, https://www.youtube.com/watch?v=N-aK6JnyFmk
+Disco,Good Times, Chic, [invalid URL removed]
+Hip Hop,Stan, Eminem, https://www.youtube.com/watch?v=gOMhN-hfMtY
+Hip Hop,Empire State of Mind, Jay-Z ft. Alicia Keys, [invalid URL removed]
+Hip Hop,Juicy, The Notorious B.I.G., [invalid URL removed]
+Jazz,All Blues, Miles Davis, [invalid URL removed]
+Jazz,Watermelon Man, Herbie Hancock, [invalid URL removed]
+Jazz,A Love Supreme: Part 1 - Acknowledgement, John Coltrane, [invalid URL removed]
+Metal,Raining Blood, Slayer, https://www.youtube.com/watch?v=z8ZqFlw6hYg
+Metal,Painkiller, Judas Priest, https://www.youtube.com/watch?v=nM__lPTWThU
+Metal,Fear of the Dark, Iron Maiden, [invalid URL removed]
+Pop,Roar, Katy Perry, https://www.youtube.com/watch?v=CevxZvSJLk8
+Pop,Uptown Girl, Billy Joel, https://www.youtube.com/watch?v=hCuMWrfXG4E
+Pop,Billie Jean, Michael Jackson, https://www.youtube.com/watch?v=Zi_XLOBDo_Y
+Reggae,Could You Be Loved, Bob Marley & The Wailers, [invalid URL removed]
+Reggae,Stir It Up, Bob Marley & The Wailers, [invalid URL removed]
+Reggae,Sweat (A La La La La Long), Inner Circle, [invalid URL removed]
+Rock,Sweet Emotion, Aerosmith, https://www.youtube.com/watch?v=89dGC8de0CA
+Rock,Livin' on a Prayer, Bon Jovi, https://www.youtube.com/watch?v=lDK9QqIzhwk
+Rock,Imagine, John Lennon, https://www.youtube.com/watch?v=VOgFZfRVaww
